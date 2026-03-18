@@ -179,28 +179,41 @@
             <p class="pricing-subtitle">Flexible plans for every stage of growth</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Starter</h3>
+                    <h3>DIY</h3>
+                    <div class="price">R2,500 – R5,000</div>
                     <ul class="pricing-features">
-                        <li>Perfect for businesses ready to explore AI automation. Get started with the tools and guidance to begin your AI journey.</li>
+                        <li>Your hardware, our templates</li>
+                        <li>Email support</li>
+                        <li>Self-service deployment guides</li>
+                        <li>Access to documentation</li>
                     </ul>
-                    <a href="mailto:admin@dylanwichmannai.com" class="btn btn-secondary">Book a Consultation</a>
+                    <a href="mailto:admin@dylanwichmannai.com?subject=DIY%20Plan%20Inquiry" class="btn btn-secondary">Get Started</a>
                 </div>
                 <div class="pricing-card highlight">
-                    <h3>Growth</h3>
+                    <h3>Guided</h3>
+                    <div class="price">R7,500 – R15,000</div>
                     <ul class="pricing-features">
-                        <li>For businesses ready to scale operations. Full AI deployment with hands-on support and custom workflow automation.</li>
+                        <li>Hands-on setup assistance</li>
+                        <li>Custom architecture design</li>
+                        <li>30 days of priority support</li>
+                        <li>Integration with your existing tools</li>
+                        <li>Performance tuning</li>
                     </ul>
-                    <a href="mailto:admin@dylanwichmannai.com" class="btn btn-primary">Book a Consultation</a>
+                    <a href="mailto:admin@dylanwichmannai.com?subject=Guided%20Plan%20Inquiry" class="btn btn-primary">Get Started</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>Enterprise</h3>
+                    <h3>Done-for-You</h3>
+                    <div class="price">R15,000 – R35,000</div>
                     <ul class="pricing-features">
-                        <li>Total AI transformation. End-to-end deployment, custom agent network, ongoing management and optimisation.</li>
+                        <li>Full discovery & analysis</li>
+                        <li>Custom AI agents for your workflows</li>
+                        <li>Complete deployment & integration</li>
+                        <li>90 days premium support</li>
+                        <li>Training for your team</li>
                     </ul>
-                    <a href="mailto:admin@dylanwichmannai.com" class="btn btn-secondary">Book a Consultation</a>
+                    <a href="mailto:admin@dylanwichmannai.com?subject=Done-for-You%20Plan%20Inquiry" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
-            <p class="pricing-footer">Every project starts with a free discovery call. No obligation.</p>
         </div>
     </section>
 
