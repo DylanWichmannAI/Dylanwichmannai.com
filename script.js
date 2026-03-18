@@ -1,49 +1,105 @@
-/* DWAI Solutions — script.js | Vanilla JS only */
-(function(){
-  'use strict';
-  var toggle=document.getElementById('navToggle');
-  var navLinks=document.getElementById('navLinks');
-  var header=document.getElementById('header');
+// DWAI Solutions — Interactive JavaScript
 
-  if(toggle&&navLinks){
-    toggle.addEventListener('click',function(){
-      var isOpen=navLinks.classList.toggle('is-open');
-      toggle.classList.toggle('is-open',isOpen);
-      toggle.setAttribute('aria-expanded',String(isOpen));
-    });
-    navLinks.querySelectorAll('a').forEach(function(link){
-      link.addEventListener('click',function(){
-        navLinks.classList.remove('is-open');
-        toggle.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded','false');
-      });
-    });
-    document.addEventListener('click',function(e){
-      if(!toggle.contains(e.target)&&!navLinks.contains(e.target)){
-        navLinks.classList.remove('is-open');
-        toggle.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded','false');
-      }
-    });
-  }
+// Mobile Navigation Toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
 
-  if(header){
-    window.addEventListener('scroll',function(){
-      header.style.boxShadow=window.scrollY>10?'0 4px 24px rgba(0,0,0,0.08)':'';
-    },{passive:true});
-  }
+if (hamburger) {
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
 
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
-    anchor.addEventListener('click',function(e){
-      var targetId=this.getAttribute('href');
-      if(targetId==='#'||targetId==='#top')return;
-      var target=document.querySelector(targetId);
-      if(target){
+    // Close menu when a link is clicked
+    const navLinkElements = navLinks.querySelectorAll('a');
+    navLinkElements.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        
+        // Skip if it's just "#" or if it's a mobile nav toggle
+        if (href === '#' || href === '#hamburger') {
+            return;
+        }
+        
         e.preventDefault();
-        var navH=header?header.offsetHeight:0;
-        var top=target.getBoundingClientRect().top+window.pageYOffset-navH-16;
-        window.scrollTo({top:top,behavior:'smooth'});
-      }
+        const target = document.querySelector(href);
+        
+        if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
     });
-  });
-})();
+});
+
+// Sticky nav background on scroll
+const navbar = document.querySelector('.navbar');
+
+if (navbar) {
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.05)';
+        } else {
+            navbar.style.boxShadow = 'none';
+        }
+    });
+}
+
+// Debounce utility function
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Lazy load animation on scroll (optional enhancement)
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe service cards and stats cards for fade-in effect
+document.querySelectorAll('.service-card, .stat-card, .pricing-card, .problem-card, .process-step').forEach(el => {
+    el.style.opacity = '0.8';
+    el.style.transition = 'opacity 0.6s ease';
+    observer.observe(el);
+});
+
+// Form handling for email CTAs (prevent default and provide feedback)
+document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Allow default mailto behavior
+        // This will open the user's default email client
+    });
+});
+
+console.log('DWAI Solutions website loaded successfully.');

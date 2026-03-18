@@ -1,364 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DWAI Solutions — AI consulting for Cape Town SMBs. Deploy multi-agent AI systems and operate like a team of 10." />
-  <title>DWAI Solutions — AI for SMBs | Dylan Wichmann AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWAI Solutions — AI Agent Deployment for SMBs</title>
+    <meta name="description" content="Deploy multi-agent AI systems on your Mac. Scale your business without hiring. AI consulting and automation for Cape Town SMBs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#top" class="nav__logo" aria-label="DWAI Solutions home">
-        <span class="logo-mark">DW</span>
-        <span class="logo-text">AI Solutions</span>
-      </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav__links" id="navLinks" role="list">
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
-        <li><a href="#pricing" class="nav__link">Pricing</a></li>
-        <li><a href="privacy.html" class="nav__link">Privacy</a></li>
-        <li><a href="mailto:admin@dylanwichmannai.com" class="btn btn--primary btn--sm">Get Started</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">DWAI</div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="mailto:admin@dylanwichmannai.com" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main id="top">
+    <!-- Hero Section -->
     <section class="hero" id="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <span class="badge">Cape Town, South Africa</span>
-          <h1 class="hero__headline">
-            Stop operating like<br />
-            a <em>one-man show.</em><br />
-            Start operating like<br />
-            <strong class="text-accent">a team of 10.</strong>
-          </h1>
-          <p class="hero__sub">DWAI Solutions deploys intelligent AI agent systems for small-to-medium businesses. Automate the grind, reclaim your time, and scale without adding headcount.</p>
-          <div class="hero__actions">
-            <a href="mailto:admin@dylanwichmannai.com" class="btn btn--primary btn--lg">Schedule a Free Call</a>
-            <a href="#how-it-works" class="btn btn--ghost btn--lg">See How It Works</a>
-          </div>
+        <div class="container">
+            <h1>Stop operating like a one-man show. Start operating like a team of 10.</h1>
+            <p class="hero-subtitle">AI-powered multi-agent systems deployed on your Mac. Scale your business without hiring.</p>
+            <a href="mailto:admin@dylanwichmannai.com?subject=Schedule%20a%20Consultation" class="btn btn-primary btn-large">Schedule a Consultation</a>
         </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero__card hero__card--1">
-            <div class="stat-icon">🤖</div>
-            <div><div class="stat-value">26</div><div class="stat-label">AI agents</div></div>
-          </div>
-          <div class="hero__card hero__card--2">
-            <div class="stat-icon">⚡</div>
-            <div><div class="stat-value">40hrs</div><div class="stat-label">saved per week</div></div>
-          </div>
-          <div class="hero__card hero__card--3">
-            <div class="stat-icon">📈</div>
-            <div><div class="stat-value">3×</div><div class="stat-label">output capacity</div></div>
-          </div>
-          <div class="hero__gradient-box">
-            <div class="hero__gradient-inner">
-              <div class="pulse-dot"></div>
-              <span>System Active — 24/7</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="section section--gray" id="problem">
-      <div class="container">
-        <div class="section__header">
-          <span class="badge badge--muted">The Reality</span>
-          <h2 class="section__title">Why most SMBs fail to scale</h2>
-          <p class="section__sub">You're talented. Your product is solid. But the business still won't move as fast as you need it to.</p>
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>The Challenge</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📋</div>
+                    <h3>Understaffed Teams</h3>
+                    <p>Your team spends hours on repetitive tasks that should be automated.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⚙️</div>
+                    <h3>Manual Bottlenecks</h3>
+                    <p>Critical workflows stall because they require manual intervention.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔄</div>
+                    <h3>Inconsistent Execution</h3>
+                    <p>Different people do things different ways. Quality and speed suffer.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😫</div>
+                    <h3>Founder Burnout</h3>
+                    <p>You're context-switching all day. It's not sustainable.</p>
+                </div>
+            </div>
         </div>
-        <div class="pain-grid">
-          <div class="pain-card">
-            <div class="pain-icon">👥</div>
-            <h3 class="pain-card__title">Understaffed &amp; overwhelmed</h3>
-            <p class="pain-card__body">You're wearing every hat — sales, ops, delivery, admin. There aren't enough hours in the day and hiring is expensive.</p>
-          </div>
-          <div class="pain-card">
-            <div class="pain-icon">🔁</div>
-            <h3 class="pain-card__title">Process bottlenecks</h3>
-            <p class="pain-card__body">Everything runs through you. Every decision, every approval, every task. The business can't move without you — and that's the trap.</p>
-          </div>
-          <div class="pain-card">
-            <div class="pain-icon">📉</div>
-            <h3 class="pain-card__title">Inconsistent execution</h3>
-            <p class="pain-card__body">Some weeks are great. Others fall apart. Without systems, quality depends entirely on your energy — which is finite.</p>
-          </div>
-          <div class="pain-card">
-            <div class="pain-icon">⏰</div>
-            <h3 class="pain-card__title">No time to think</h3>
-            <p class="pain-card__body">You're so buried in doing the work that you never get to grow the business. Strategy becomes a luxury you can't afford.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="section" id="solution">
-      <div class="container">
-        <div class="solution__inner">
-          <div class="solution__content">
-            <span class="badge">The OpenClaw Difference</span>
-            <h2 class="section__title">Meet your AI team</h2>
-            <p class="solution__body">We deploy <strong>OpenClaw</strong> — a multi-agent AI platform built on a dedicated Mac Mini server. It runs 24/7, handles your repetitive workflows, and never calls in sick.</p>
-            <p class="solution__body">Think of it as a team of specialists: one handles customer support, one manages your CRM, one monitors your systems, one creates content — all working in sync, all accountable to you.</p>
-            <a href="#services" class="btn btn--primary">Explore Services</a>
-          </div>
-          <div class="solution__visual" aria-hidden="true">
-            <div class="agent-grid">
-              <div class="agent-chip agent-chip--active">🧠 Main Bot</div>
-              <div class="agent-chip">📊 CRM Agent</div>
-              <div class="agent-chip">📬 CS Agent</div>
-              <div class="agent-chip agent-chip--active">🛡️ Sentinel</div>
-              <div class="agent-chip">📱 Social Agent</div>
-              <div class="agent-chip">🔧 Medic Bot</div>
-              <div class="agent-chip agent-chip--active">📝 Content Agent</div>
-              <div class="agent-chip">⚙️ Automation</div>
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2>The Solution</h2>
+            <div class="solution-content">
+                <p>DWAI Solutions deploys <strong>OpenClaw AI systems</strong>—sophisticated multi-agent platforms that run on your Mac, 24/7.</p>
+                <p>Think of it as hiring 10 specialists for your business: agents that handle data entry, customer communication, workflow automation, reporting, and more. Each agent is intelligent, consistent, and tireless.</p>
+                <p>No cloud bills. No external dependencies. Everything runs on your hardware, under your control.</p>
+                <h3>Key Benefits</h3>
+                <ul class="solution-list">
+                    <li><strong>Automation at scale</strong> — automate 80% of repetitive work</li>
+                    <li><strong>24/7 operation</strong> — your AI team never sleeps</li>
+                    <li><strong>Perfect consistency</strong> — every task done the same way, every time</li>
+                    <li><strong>Scalable</strong> — add new agents as your business grows</li>
+                </ul>
             </div>
-            <p class="solution__visual-note">Your custom AI squad — always working.</p>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="section section--gray" id="services">
-      <div class="container">
-        <div class="section__header">
-          <span class="badge badge--muted">What We Do</span>
-          <h2 class="section__title">Four ways we build your AI team</h2>
-          <p class="section__sub">Each service track is designed to remove a specific bottleneck in your business.</p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI Agent Deployment</h3>
+                    <p>We deploy ready-made or custom AI agents to handle your specific workflows. From data processing to customer engagement, your agents work 24/7.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Workflow Automation</h3>
+                    <p>Identify bottlenecks and automate them. We design and implement AI-driven workflows that eliminate manual steps and reduce processing time by up to 90%.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨‍🏫</div>
+                    <h3>One-on-One AI Coaching</h3>
+                    <p>Learn to design, deploy, and manage your own AI systems. We coach you directly so you can build and iterate without us.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Done-for-You Deployments</h3>
+                    <p>We handle everything. Discovery, architecture, deployment, integration, testing. You get a fully operational AI team in 4-6 weeks.</p>
+                </div>
+            </div>
         </div>
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🤖</div>
-            <h3 class="service-card__title">AI Agent Deployment</h3>
-            <p class="service-card__body">We deploy a full multi-agent system tailored to your business. Each agent has a specific role — from handling inbound leads to monitoring your operations.</p>
-            <ul class="service-card__benefits" role="list">
-              <li>Custom-configured for your workflows</li>
-              <li>Runs 24/7 on dedicated hardware</li>
-              <li>Communicates via Telegram &amp; Discord</li>
-              <li>Up to 26 specialised agents</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">⚡</div>
-            <h3 class="service-card__title">Workflow Automation</h3>
-            <p class="service-card__body">Map, design, and automate the repetitive work that's eating your time. CRM updates, lead follow-ups, reports, notifications — all handled automatically.</p>
-            <ul class="service-card__benefits" role="list">
-              <li>End-to-end workflow mapping</li>
-              <li>CRM &amp; calendar integrations</li>
-              <li>Automated reporting &amp; alerts</li>
-              <li>Reduces manual admin by 70%+</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🎯</div>
-            <h3 class="service-card__title">One-on-One AI Coaching</h3>
-            <p class="service-card__body">Not ready for a full deployment? We teach you how to build and use AI tools yourself, so you can start saving time immediately without the full investment.</p>
-            <ul class="service-card__benefits" role="list">
-              <li>Personalised curriculum</li>
-              <li>Practical hands-on sessions</li>
-              <li>Prompt engineering mastery</li>
-              <li>AI tool selection guidance</li>
-            </ul>
-          </article>
-          <article class="service-card service-card--featured">
-            <div class="service-card__badge">Most Popular</div>
-            <div class="service-card__icon" aria-hidden="true">🚀</div>
-            <h3 class="service-card__title">Done-for-You Deployments</h3>
-            <p class="service-card__body">We handle everything — from discovery and design to deployment and ongoing support. You approve the plan, we build the system, you start saving time.</p>
-            <ul class="service-card__benefits" role="list">
-              <li>Full discovery &amp; design phase</li>
-              <li>End-to-end build &amp; configuration</li>
-              <li>Staff training &amp; handover</li>
-              <li>30-day post-launch support</li>
-            </ul>
-          </article>
-        </div>
-      </div>
     </section>
 
-    <section class="section" id="how-it-works">
-      <div class="container">
-        <div class="section__header">
-          <span class="badge badge--muted">The Process</span>
-          <h2 class="section__title">From zero to running in 4 steps</h2>
-          <p class="section__sub">No jargon. No surprises. You're in control at every stage.</p>
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>We understand your business, identify bottlenecks, and map your workflows. This is where we build the blueprint.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design</h3>
+                    <p>We architect your AI system: which agents you need, what they'll do, how they'll interact, and what success looks like.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Deployment</h3>
+                    <p>We build and deploy your agents on your Mac. We integrate them with your existing tools and workflows.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Support</h3>
+                    <p>We monitor, optimize, and improve your system. Your AI team gets better over time.</p>
+                </div>
+            </div>
         </div>
-        <ol class="steps" role="list">
-          <li class="step">
-            <div class="step__number" aria-hidden="true">01</div>
-            <div class="step__content">
-              <div class="step__icon" aria-hidden="true">🔍</div>
-              <h3 class="step__title">Discovery</h3>
-              <p class="step__body">We run a deep-dive session to understand your business, your biggest bottlenecks, and your goals. No assumptions — we map reality.</p>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step__number" aria-hidden="true">02</div>
-            <div class="step__content">
-              <div class="step__icon" aria-hidden="true">📐</div>
-              <h3 class="step__title">Design</h3>
-              <p class="step__body">We design your custom AI system architecture — which agents to build, what they automate, how they communicate. You review and approve before we touch code.</p>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step__number" aria-hidden="true">03</div>
-            <div class="step__content">
-              <div class="step__icon" aria-hidden="true">⚙️</div>
-              <h3 class="step__title">Deployment</h3>
-              <p class="step__body">We build, test, and deploy your system on dedicated hardware. Every agent is verified end-to-end before handover. No half-finished systems.</p>
-            </div>
-          </li>
-          <li class="step">
-            <div class="step__number" aria-hidden="true">04</div>
-            <div class="step__content">
-              <div class="step__icon" aria-hidden="true">🛡️</div>
-              <h3 class="step__title">Support</h3>
-              <p class="step__body">Your system runs 24/7. We monitor it, tune it, and keep it sharp. Monthly check-ins, incident response, and continuous improvement included.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
     </section>
 
-    <section class="section section--accent" id="stats">
-      <div class="container">
-        <div class="section__header section__header--light">
-          <span class="badge badge--white">Results</span>
-          <h2 class="section__title">Real impact, real numbers</h2>
-          <p class="section__sub">What clients typically experience after deploying their AI team.</p>
+    <!-- Proof/Stats Section -->
+    <section class="proof">
+        <div class="container">
+            <h2>Proven Results</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">hours saved per week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">process consistency</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">operational cost reduction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">AI operation (always on)</div>
+                </div>
+            </div>
         </div>
-        <div class="stats-grid">
-          <div class="stat-card"><div class="stat-card__value">40+</div><div class="stat-card__label">Hours saved per week</div><div class="stat-card__note">Automated admin, follow-ups &amp; scheduling</div></div>
-          <div class="stat-card"><div class="stat-card__value">70%</div><div class="stat-card__label">Less manual admin</div><div class="stat-card__note">Via workflow automation &amp; integrations</div></div>
-          <div class="stat-card"><div class="stat-card__value">3×</div><div class="stat-card__label">Output capacity</div><div class="stat-card__note">Scale without hiring more people</div></div>
-          <div class="stat-card"><div class="stat-card__value">24/7</div><div class="stat-card__label">System uptime</div><div class="stat-card__note">No days off, no sick days, no burnout</div></div>
-          <div class="stat-card"><div class="stat-card__value">&lt;2 wks</div><div class="stat-card__label">Avg deployment time</div><div class="stat-card__note">From kick-off to live system</div></div>
-        </div>
-        <p class="stats-disclaimer">Figures represent typical client outcomes. Results vary by business complexity and scope.</p>
-      </div>
     </section>
 
-    <section class="section" id="pricing">
-      <div class="container">
-        <div class="section__header">
-          <span class="badge badge--muted">Pricing</span>
-          <h2 class="section__title">Transparent pricing in ZAR</h2>
-          <p class="section__sub">No hidden fees. No surprises. Choose the level that fits where you are today.</p>
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p class="pricing-subtitle">Flexible plans for every stage of growth</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>DIY</h3>
+                    <div class="price">R2,500 – R5,000</div>
+                    <ul class="pricing-features">
+                        <li>Your hardware, our templates</li>
+                        <li>Email support</li>
+                        <li>Self-service deployment guides</li>
+                        <li>Access to documentation</li>
+                    </ul>
+                    <a href="mailto:admin@dylanwichmannai.com?subject=DIY%20Plan%20Inquiry" class="btn btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card highlight">
+                    <h3>Guided</h3>
+                    <div class="price">R7,500 – R15,000</div>
+                    <ul class="pricing-features">
+                        <li>Hands-on setup assistance</li>
+                        <li>Custom architecture design</li>
+                        <li>30 days of priority support</li>
+                        <li>Integration with your existing tools</li>
+                        <li>Performance tuning</li>
+                    </ul>
+                    <a href="mailto:admin@dylanwichmannai.com?subject=Guided%20Plan%20Inquiry" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Done-for-You</h3>
+                    <div class="price">R15,000 – R35,000</div>
+                    <ul class="pricing-features">
+                        <li>Full discovery & analysis</li>
+                        <li>Custom AI agents for your workflows</li>
+                        <li>Complete deployment & integration</li>
+                        <li>90 days premium support</li>
+                        <li>Training for your team</li>
+                    </ul>
+                    <a href="mailto:admin@dylanwichmannai.com?subject=Done-for-You%20Plan%20Inquiry" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
         </div>
-        <div class="pricing-grid">
-          <article class="pricing-card">
-            <div class="pricing-card__header">
-              <h3 class="pricing-card__name">DIY</h3>
-              <div class="pricing-card__price"><span class="price-currency">R</span><span class="price-amount">2.5K – 5K</span></div>
-              <p class="pricing-card__freq">once-off</p>
-            </div>
-            <p class="pricing-card__desc">Templates, guides, and a setup call. You build it with our blueprints.</p>
-            <ul class="pricing-card__features" role="list">
-              <li>System architecture blueprint</li>
-              <li>Agent configuration templates</li>
-              <li>1× 90-min setup call</li>
-              <li>30-day email support</li>
-              <li>Access to documentation library</li>
-            </ul>
-            <a href="mailto:admin@dylanwichmannai.com?subject=DIY Enquiry" class="btn btn--outline btn--full">Get Started</a>
-          </article>
-          <article class="pricing-card pricing-card--popular">
-            <div class="pricing-card__badge">Best Value</div>
-            <div class="pricing-card__header">
-              <h3 class="pricing-card__name">Guided</h3>
-              <div class="pricing-card__price"><span class="price-currency">R</span><span class="price-amount">7.5K – 15K</span></div>
-              <p class="pricing-card__freq">once-off</p>
-            </div>
-            <p class="pricing-card__desc">We guide the build, you execute. Perfect for hands-on business owners.</p>
-            <ul class="pricing-card__features" role="list">
-              <li>Full discovery session</li>
-              <li>Custom system design</li>
-              <li>4× hands-on build sessions</li>
-              <li>We configure, you deploy</li>
-              <li>60-day support window</li>
-              <li>Access to private community</li>
-            </ul>
-            <a href="mailto:admin@dylanwichmannai.com?subject=Guided Package Enquiry" class="btn btn--primary btn--full">Get Started</a>
-          </article>
-          <article class="pricing-card">
-            <div class="pricing-card__header">
-              <h3 class="pricing-card__name">Done-for-You</h3>
-              <div class="pricing-card__price"><span class="price-currency">R</span><span class="price-amount">15K – 35K</span></div>
-              <p class="pricing-card__freq">once-off + optional retainer</p>
-            </div>
-            <p class="pricing-card__desc">We do everything. You show up for approvals and launch day.</p>
-            <ul class="pricing-card__features" role="list">
-              <li>Full discovery &amp; design phase</li>
-              <li>Complete build &amp; configuration</li>
-              <li>End-to-end testing &amp; QA</li>
-              <li>Staff onboarding &amp; training</li>
-              <li>30-day post-launch support</li>
-              <li>Monthly maintenance retainer option</li>
-            </ul>
-            <a href="mailto:admin@dylanwichmannai.com?subject=Done-for-You Enquiry" class="btn btn--outline btn--full">Get Started</a>
-          </article>
-        </div>
-        <p class="pricing-note">All prices in ZAR. VAT may apply. <a href="mailto:admin@dylanwichmannai.com">Contact us</a> for custom enterprise pricing.</p>
-      </div>
     </section>
 
-    <section class="section section--cta" id="cta">
-      <div class="container">
-        <div class="cta-box">
-          <h2 class="cta-box__title">Ready to operate like a team of 10?</h2>
-          <p class="cta-box__sub">Book a free 30-minute discovery call. No commitment, no sales pitch — just an honest conversation about what AI can do for your business.</p>
-          <a href="mailto:admin@dylanwichmannai.com?subject=Discovery Call Request" class="btn btn--primary btn--lg">Book Your Free Call</a>
-          <p class="cta-box__email">Or email us: <a href="mailto:admin@dylanwichmannai.com">admin@dylanwichmannai.com</a></p>
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <h2>Ready to start operating like a team?</h2>
+            <p>Let's talk about your business.</p>
+            <a href="mailto:admin@dylanwichmannai.com?subject=DWAI%20Inquiry" class="btn btn-primary btn-large">Email us: admin@dylanwichmannai.com</a>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="#top" class="nav__logo" aria-label="DWAI Solutions home">
-            <span class="logo-mark">DW</span><span class="logo-text">AI Solutions</span>
-          </a>
-          <p class="footer__tagline">Operating like a team of 10, since day one.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Dylan Wichmann AI. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="mailto:admin@dylanwichmannai.com">Contact</a>
+                </div>
+            </div>
         </div>
-        <nav class="footer__links" aria-label="Footer navigation">
-          <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="mailto:admin@dylanwichmannai.com">Contact</a>
-        </nav>
-        <div class="footer__social">
-          <p class="footer__social-label">Follow along</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Dylan Wichmann AI (DWAI Solutions). All rights reserved. Cape Town, South Africa.</p>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
